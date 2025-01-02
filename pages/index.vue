@@ -117,7 +117,7 @@ export default {
         {
           title: "Explore funciones matemáticas",
           description:
-            "Visualize gráficas de funciones matemáticas y escuche el sonido correspondiente.",
+            "Visualice gráficas de funciones matemáticas y escuche el sonido correspondiente.",
         },
         {
           title: "Personalize el sonido",
