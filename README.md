@@ -1,5 +1,7 @@
 # audiofunctions2.0
 
+This is a Spanish translation of [audiofunctions 2.0](https://github.com/integr-abile/audiofunctions2.0)
+
 ## Build Setup
 
 ```bash
