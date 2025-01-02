@@ -75,21 +75,21 @@
         </ssr-carousel>
         <div class="d-flex justify-content-center">
           <div class="d-flex align-items-center mr-2">
-            Slide corrente: {{ page + 1 }}
+            Transparencia actual: {{ page + 1 }}
           </div>
           <b-button
             :disabled="page == 0"
             class="mr-2"
             variant="outline-primary"
             @click="page--"
-            >Slide precedente</b-button
+            >Transparencia anterior</b-button
           >
           <b-button
             :disabled="page == carouselSlides.length - 1"
             class="mr-2"
             variant="outline-primary"
             @click="page++"
-            >Slide successiva</b-button
+            >Transparencia siguiente</b-button
           >
         </div>
       </b-col>
@@ -115,37 +115,37 @@ export default {
       page: 0,
       features: [
         {
-          title: "Esplora le funzioni matematiche",
+          title: "Explore funciones matemáticas",
           description:
-            "Visualizza grafici di funzioni matematiche e ascolta il suono corrispondente.",
+            "Visualize gráficas de funciones matemáticas y escuche el sonido correspondiente.",
         },
         {
-          title: "Personalizza il suono",
+          title: "Personalize el sonido",
           description:
-            "Modifica il suono associato alle funzioni matematiche e scopri nuove combinazioni.",
+            "Cambie el sonido asociado a las funciones matemáticas y descubra nuevas combinaciones.",
         },
         {
-          title: "Condividi i tuoi risultati",
+          title: "Comparta sus resultados",
           description:
-            "Salva i tuoi grafici e i tuoi suoni preferiti e condividili con i tuoi amici.",
+            "Guarde sus gráficos y sonidos favoritos y compártalos con sus amigos.",
         },
       ],
       carouselSlides: [
         {
-          title: "Slide 1",
-          description: "Description 1",
+          title: "Transparencia 1",
+          description: "Descripción 1",
           image: "sample-1.jpg",
           imageAlt: "Sample 1",
         },
         {
-          title: "Slide 2",
-          description: "Description 2",
+          title: "Transparencia 2",
+          description: "Descripción 2",
           image: "sample-2.jpg",
           imageAlt: "Sample 2",
         },
         {
-          title: "Slide 3",
-          description: "Description 3",
+          title: "Transparencia 3",
+          description: "Descripción 3",
           image: "sample-3.webp",
           imageAlt: "Sample 3",
         },

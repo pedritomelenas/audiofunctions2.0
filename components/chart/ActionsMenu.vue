@@ -25,7 +25,7 @@
             @click="changeFunction"
             v-shortkey.once="{ next: ['f'], previous: ['shift', 'f'] }"
             @shortkey="handleShortkey"
-            >Cambia función</b-button
+            >Cambiar la función</b-button
           >
           <b-button
             @click="toggleVolume"

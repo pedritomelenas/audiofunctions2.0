@@ -29,7 +29,7 @@
           <template #overlay>
             <div class="w-100 h-100">
               <p class="display-3 text-center">
-                Premi un tasto qualsiasi per iniziare ad interagire col grafico
+                Pulse cualquier tecla para empezar a interactuar con el gráfico
               </p>
             </div>
           </template>
@@ -38,7 +38,7 @@
     </div>
     <div class="h-100" v-else>
       <div class="d-flex h-100 justify-content-center align-items-center">
-        <h2>Nessuna funzione inserita</h2>
+        <h2>No se ha introducido ninguna función</h2>
       </div>
     </div>
     <Keypress

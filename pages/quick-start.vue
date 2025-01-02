@@ -1,6 +1,6 @@
 <template>
   <div class="d-flex flex-column align-items-center">
-    <h2 class="mt-2">Puoi iniziare provando una delle seguenti</h2>
+    <h2 class="mt-2">Puede empezar probando una de las siguientes opciones</h2>
     <ul class="mb-3 d-flex flex-column" style="padding-inline-start: unset">
       <li
         v-for="(fn, index) in mathjaxFunctionsLatex"
@@ -17,14 +17,14 @@
         </b-button>
       </li>
     </ul>
-    <h2>Oppure puoi scriverne una tu</h2>
+    <h2>O puede escribir una en el siguiente cuadro</h2>
     <FormulaInput @insertedFunction="handleInsertedFunctionUpdate" />
     <NuxtLink class="btn btn-info my-3" to="/configure"
-      >Configura la funzione nel dettaglio</NuxtLink
+      >Configure los detalles de la función</NuxtLink
     >
 
     <p>
-      ara descubrir todas las características de Audiofunctions o para cualquier  problema siempre puedes consultar las
+      Para descubrir todas las características de Audiofunctions o para cualquier  problema siempre puedes consultar las
       <NuxtLink to="/instructions">instrucciones</NuxtLink>
     </p>
 
@@ -39,7 +39,7 @@ import _ from "lodash";
 export default {
   layout: "innerPage",
   mounted() {
-    this.$store.commit("setTitle", "Crea la tua prima funzione");
+    this.$store.commit("setTitle", "Cree su primera función");
   },
   data(){
     return{

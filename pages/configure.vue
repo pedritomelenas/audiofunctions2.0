@@ -1,7 +1,7 @@
 <template>
   <div id="config-container">
     <div class="option-container p-5 m-3">
-      <h2>Inserimento funzione del grafico</h2>
+      <h2>Inserte la función a mostrar</h2>
       <FormulaInput @insertedFunction="handleInsertedFunctionUpdate" />
     </div>
     <div class="d-flex justify-content-start">
@@ -13,11 +13,11 @@
       </div>
     </div>
     <div class="option-container p-5 m-3">
-      <h2>Didattica</h2>
+      <h2>Didáctica</h2>
     </div>
     <div class="d-flex justify-content-end">
       <b-button variant="primary" size="lg" class="mr-2" @click="showChartLink" :disabled="!canStartExploringFunction"
-        >Genera link</b-button
+        >Genere enlace</b-button
       >
       <b-button variant="success" size="lg" class="mr-3" @click="goToChart" :disabled="!canStartExploringFunction"
         >Esplora</b-button
@@ -25,7 +25,7 @@
     </div>
     <div v-if="generatedLink" class="text-right mr-3 mt-1">
       <p id="link-container" class="mr-2">
-        <NuxtLink :to="generatedLink">Link al grafico</NuxtLink>
+        <NuxtLink :to="generatedLink">Enlace a la gráficc</NuxtLink>
       </p>
       <div class="d-flex justify-content-end align-items-center">
         <b-alert
@@ -66,7 +66,7 @@ export default {
     };
   },
   mounted() {
-    this.$store.commit("setTitle", "Configura la funzione in dettaglio");
+    this.$store.commit("setTitle", "Configure los detalles de la función");
   },
   computed: {
     chartLink() {

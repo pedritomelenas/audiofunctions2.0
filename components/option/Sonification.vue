@@ -19,13 +19,13 @@
       <b-form-checkbox
         id="sonification-abilitation-check"
         v-model="status"
-        value="abilitata"
-        unchecked-value="disabilitata"
+        value="activada"
+        unchecked-value="desactivada"
       >
       </b-form-checkbox>
       <div class="ml-2">
         <label aria-hidden="true" class="h-100 d-flex align-items-center"
-          >Stato: {{ status }}</label
+          >Estado: {{ status }}</label
         >
         <label for="sonification-abilitation-check" class="sr-only">
           Estado de la sonificación:
@@ -58,7 +58,7 @@ export default {
       this.$emit("optionDataChange", this.currentOptionData);
     },
     status(val) {
-      this.currentOptionData.isEnabled = val == "abilitata" ? true : false;
+      this.currentOptionData.isEnabled = val == "activada" ? true : false;
       this.$emit("optionDataChange", this.currentOptionData);
     },
   },
@@ -69,7 +69,7 @@ export default {
     updateOptionData(currentValues) {
       this.currentOptionData = currentValues;
       this.selectedInstrument = currentValues.selectedInstrument;
-      this.status = currentValues.isEnabled ? "abilitata" : "disabilitata";
+      this.status = currentValues.isEnabled ? "activada" : "desactivada";
     },
   },
 };
